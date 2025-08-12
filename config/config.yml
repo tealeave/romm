@@ -1,0 +1,18 @@
+exclude:
+  platforms: []
+  roms:
+    multi_file:
+      names: []
+      parts:
+        extensions: []
+        names: []
+    single_file:
+      extensions: []
+      names: []
+filesystem:
+  firmware_folder: bios
+  roms_folder: roms
+system:
+  platforms:
+    snes: snes
+  versions: {}
