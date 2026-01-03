@@ -28,7 +28,20 @@
 | Platform | Location | Games |
 |----------|----------|-------|
 | NES | `library/roms/nes/` | 1 game (Contra) |
-| SNES | `library/roms/snes/` | 17 games |
+| SNES | `library/roms/snes/` | 22 games |
+
+### ROMs Added Today (Session 2)
+
+Downloaded and extracted 6 new SNES ROMs from Vimm's Lair:
+
+| Game | Size | Notes |
+|------|------|-------|
+| Super Mario World (USA).sfc | 338 KB | Essential platformer |
+| Donkey Kong Country 2 - Diddy's Kong Quest (USA).sfc | 2.9 MB | Best of the DKC trilogy |
+| Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA).sfc | 3.1 MB | Final DKC entry |
+| Super Metroid (Japan, USA).sfc | 1.5 MB | Masterpiece |
+| Super Castlevania IV (USA).sfc | 837 KB | Castlevania Anniversary Collection version |
+| Contra III - The Alien Wars (USA).sfc | 740 KB | Follow-up to NES Contra |
 
 ### Controller Configuration
 
@@ -70,7 +83,10 @@ Configured Xbox 360-compatible controller (3rd party) for EmulatorJS in `config/
 ### NES (1 game)
 - Contra (USA).nes
 
-### SNES (17 games)
+### SNES (22 games)
+- Contra III - The Alien Wars (USA).sfc **(NEW)**
+- Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1).sfc **(NEW)**
+- Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc **(NEW)**
 - Final Fight 3 (USA) (Virtual Console).sfc
 - Goof Troop (USA).sfc
 - Great Circus Mystery Starring Mickey & Minnie, The (USA).sfc
@@ -83,7 +99,10 @@ Configured Xbox 360-compatible controller (3rd party) for EmulatorJS in `config/
 - Pocky & Rocky (USA).sfc
 - Pocky & Rocky 2 (USA).sfc
 - Super Bomberman (USA).sfc
+- Super Castlevania IV (USA) (Castlevania Anniversary Collection).sfc **(NEW)**
 - Super Mario Kart (USA).sfc
+- Super Mario World (USA).sfc **(NEW)**
+- Super Metroid (Japan, USA) (En,Ja).sfc **(NEW)**
 - Teenage Mutant Ninja Turtles IV - Turtles in Time (USA).sfc
 - Wild Guns (USA).sfc
 - Zombies Ate My Neighbors (USA).sfc
@@ -101,47 +120,52 @@ Configured Xbox 360-compatible controller (3rd party) for EmulatorJS in `config/
 
 ## 5) Next Steps
 
-### Immediate: Download Additional SNES ROMs from Vimm's Lair
+### Immediate: Run RoMM Scan
+1. Start RoMM: `docker compose up -d`
+2. Go to http://localhost:8080
+3. Run "Unmatched Games" scan with IGDB selected
+4. Verify artwork is fetched for all 23 games (1 NES + 22 SNES)
+
+### Remaining ROMs to Download from Vimm's Lair
 
 **Source:** https://vimm.net/vault/ (SNES section)
 
 **Recommended version:** USA, non-Virtual Console, Version 1.0
 
-#### Platformers
-| Game | Search Term | Priority |
-|------|-------------|----------|
-| Super Mario World | `super mario world` | High |
-| Donkey Kong Country | `donkey kong country` | High |
-| Donkey Kong Country 2 | `donkey kong country 2` | High |
-| Donkey Kong Country 3 | `donkey kong country 3` | High |
-| Super Metroid | `super metroid` | High |
-| Super Castlevania IV | `super castlevania iv` | High |
-| Contra III: The Alien Wars | `contra iii` | High |
+#### Platformers (1 remaining)
+| Game | Search Term | Priority | Status |
+|------|-------------|----------|--------|
+| Super Mario World | `super mario world` | High | DONE |
+| Donkey Kong Country | `donkey kong country` | High | **NOT DOWNLOADED** |
+| Donkey Kong Country 2 | `donkey kong country 2` | High | DONE |
+| Donkey Kong Country 3 | `donkey kong country 3` | High | DONE |
+| Super Metroid | `super metroid` | High | DONE |
+| Super Castlevania IV | `super castlevania iv` | High | DONE |
+| Contra III: The Alien Wars | `contra iii` | High | DONE |
 
-#### Beat 'em Ups
-| Game | Search Term | Priority |
-|------|-------------|----------|
-| Final Fight 2 | `final fight 2` | High |
-| Knights of the Round | `knights of the round` | Medium |
-| King of Dragons | `king of dragons` | Medium |
-| The Peace Keepers | `peace keepers` | Medium |
-| Sunset Riders | `sunset riders` | Medium |
-| Run Saber | `run saber` | Medium |
+#### Beat 'em Ups (6 remaining)
+| Game | Search Term | Priority | Status |
+|------|-------------|----------|--------|
+| Final Fight 2 | `final fight 2` | High | **NOT DOWNLOADED** |
+| Knights of the Round | `knights of the round` | Medium | **NOT DOWNLOADED** |
+| King of Dragons | `king of dragons` | Medium | **NOT DOWNLOADED** |
+| The Peace Keepers | `peace keepers` | Medium | **NOT DOWNLOADED** |
+| Sunset Riders | `sunset riders` | Medium | **NOT DOWNLOADED** |
+| Run Saber | `run saber` | Medium | **NOT DOWNLOADED** |
 
-#### Multiplayer
-| Game | Search Term | Priority |
-|------|-------------|----------|
-| Super Bomberman 2 | `super bomberman 2` | Medium |
-| Super Bomberman 3 | `super bomberman 3` | Medium |
-| Super Bomberman 4 | `super bomberman 4` | Low |
-| Super Bomberman 5 | `super bomberman 5` | Low |
-| Street Fighter II Turbo | `street fighter ii turbo` | High |
+#### Multiplayer (5 remaining)
+| Game | Search Term | Priority | Status |
+|------|-------------|----------|--------|
+| Super Bomberman 2 | `super bomberman 2` | Medium | **NOT DOWNLOADED** |
+| Super Bomberman 3 | `super bomberman 3` | Medium | **NOT DOWNLOADED** |
+| Super Bomberman 4 | `super bomberman 4` | Low | **NOT DOWNLOADED** |
+| Super Bomberman 5 | `super bomberman 5` | Low | **NOT DOWNLOADED** |
+| Street Fighter II Turbo | `street fighter ii turbo` | High | **NOT DOWNLOADED** |
 
-### Short-term: After Downloads
+### Short-term: After Remaining Downloads
 1. Move all `.zip` files from `~/Downloads/` to `library/roms/snes/`
-2. Unzip all ROMs
-3. Run "Unmatched Games" scan in RoMM with IGDB selected
-4. Verify artwork is fetched for all games
+2. Unzip all ROMs: `cd library/roms/snes && for f in *.zip; do unzip -o "$f" && rm "$f"; done`
+3. Run scan in RoMM UI
 
 ### Nice-to-have
 - Add ScreenScraper as backup metadata provider
