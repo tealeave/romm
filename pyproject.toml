@@ -1,0 +1,8 @@
+[project]
+name = "romm"
+version = "0.1.0"
+description = "Helper scripts for the RomM home game library (archive extraction, downloads)"
+requires-python = ">=3.12"
+dependencies = [
+    "py7zr>=1.1.0",
+]
