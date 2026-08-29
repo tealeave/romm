@@ -19,31 +19,33 @@ system:
 emulatorjs:
   debug: true
   controls:
+    # value2 must use EmulatorJS gamepad names (BUTTON_1..4, DPAD_*, SELECT, START,
+    # LEFT/RIGHT_TOP/BOTTOM_SHOULDER) — numeric indexes are ignored.
     # NES core (for Contra)
     fceumm:
       0:  # Player 1
-        0:  { value: 'x', value2: '1' }           # B (NES) → B1 (red)
-        8:  { value: 'z', value2: '0' }           # A (NES) → B0 (green)
-        2:  { value: 'v', value2: '8' }           # Select → B8 (Back)
-        3:  { value: 'enter', value2: '9' }       # Start → B9
-        4:  { value: 'up arrow', value2: '12' }   # D-pad Up
-        5:  { value: 'down arrow', value2: '13' } # D-pad Down
-        6:  { value: 'left arrow', value2: '14' } # D-pad Left
-        7:  { value: 'right arrow', value2: '15' } # D-pad Right
+        0:  { value: 'x', value2: 'BUTTON_2' }               # B (NES) → red (east)
+        8:  { value: 'z', value2: 'BUTTON_1' }               # A (NES) → green (south)
+        2:  { value: 'v', value2: 'SELECT' }                 # Select → Back
+        3:  { value: 'enter', value2: 'START' }              # Start
+        4:  { value: 'up arrow', value2: 'DPAD_UP' }         # D-pad Up
+        5:  { value: 'down arrow', value2: 'DPAD_DOWN' }     # D-pad Down
+        6:  { value: 'left arrow', value2: 'DPAD_LEFT' }     # D-pad Left
+        7:  { value: 'right arrow', value2: 'DPAD_RIGHT' }   # D-pad Right
     # SNES core (for Kirby, Goof Troop, etc.)
     snes9x:
       0:  # Player 1
-        0:  { value: 'x', value2: '1' }           # B → B1 (red)
-        1:  { value: 's', value2: '3' }           # Y → B3 (yellow)
-        2:  { value: 'v', value2: '8' }           # Select → B8 (Back)
-        3:  { value: 'enter', value2: '9' }       # Start → B9
-        4:  { value: 'up arrow', value2: '12' }   # D-pad Up
-        5:  { value: 'down arrow', value2: '13' } # D-pad Down
-        6:  { value: 'left arrow', value2: '14' } # D-pad Left
-        7:  { value: 'right arrow', value2: '15' } # D-pad Right
-        8:  { value: 'z', value2: '0' }           # A → B0 (green)
-        9:  { value: 'a', value2: '2' }           # X → B2 (blue)
-        10: { value: 'q', value2: '4' }           # L → B4 (LB)
-        11: { value: 'e', value2: '5' }           # R → B5 (RB)
-        12: { value: 'tab', value2: '6' }         # L2 → B6 (LT)
-        13: { value: 'w', value2: '7' }           # R2 → B7 (RT)
+        0:  { value: 'x', value2: 'BUTTON_2' }               # B → red (east)
+        1:  { value: 's', value2: 'BUTTON_4' }               # Y → yellow (north)
+        2:  { value: 'v', value2: 'SELECT' }                 # Select → Back
+        3:  { value: 'enter', value2: 'START' }              # Start
+        4:  { value: 'up arrow', value2: 'DPAD_UP' }         # D-pad Up
+        5:  { value: 'down arrow', value2: 'DPAD_DOWN' }     # D-pad Down
+        6:  { value: 'left arrow', value2: 'DPAD_LEFT' }     # D-pad Left
+        7:  { value: 'right arrow', value2: 'DPAD_RIGHT' }   # D-pad Right
+        8:  { value: 'z', value2: 'BUTTON_1' }               # A → green (south)
+        9:  { value: 'a', value2: 'BUTTON_3' }               # X → blue (west)
+        10: { value: 'q', value2: 'LEFT_TOP_SHOULDER' }      # L → LB
+        11: { value: 'e', value2: 'RIGHT_TOP_SHOULDER' }     # R → RB
+        12: { value: 'tab', value2: 'LEFT_BOTTOM_SHOULDER' } # L2 → LT
+        13: { value: 'w', value2: 'RIGHT_BOTTOM_SHOULDER' }  # R2 → RT
