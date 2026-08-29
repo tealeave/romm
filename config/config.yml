@@ -32,6 +32,15 @@ emulatorjs:
         5:  { value: 'down arrow', value2: 'DPAD_DOWN' }     # D-pad Down
         6:  { value: 'left arrow', value2: 'DPAD_LEFT' }     # D-pad Left
         7:  { value: 'right arrow', value2: 'DPAD_RIGHT' }   # D-pad Right
+      1:  # Player 2 (second gamepad; keyboard uses right-hand cluster)
+        0:  { value: 'n', value2: 'BUTTON_2' }               # B (NES) → red (east)
+        8:  { value: 'm', value2: 'BUTTON_1' }               # A (NES) → green (south)
+        2:  { value: 'g', value2: 'SELECT' }                 # Select → Back
+        3:  { value: 'b', value2: 'START' }                  # Start
+        4:  { value: 'i', value2: 'DPAD_UP' }                # D-pad Up
+        5:  { value: 'k', value2: 'DPAD_DOWN' }              # D-pad Down
+        6:  { value: 'j', value2: 'DPAD_LEFT' }              # D-pad Left
+        7:  { value: 'l', value2: 'DPAD_RIGHT' }             # D-pad Right
     # SNES core (for Kirby, Goof Troop, etc.)
     snes9x:
       0:  # Player 1
@@ -49,3 +58,18 @@ emulatorjs:
         11: { value: 'e', value2: 'RIGHT_TOP_SHOULDER' }     # R → RB
         12: { value: 'tab', value2: 'LEFT_BOTTOM_SHOULDER' } # L2 → LT
         13: { value: 'w', value2: 'RIGHT_BOTTOM_SHOULDER' }  # R2 → RT
+      1:  # Player 2 (second gamepad; keyboard uses right-hand cluster)
+        0:  { value: 'n', value2: 'BUTTON_2' }               # B → red (east)
+        1:  { value: 'h', value2: 'BUTTON_4' }               # Y → yellow (north)
+        2:  { value: 'g', value2: 'SELECT' }                 # Select → Back
+        3:  { value: 'b', value2: 'START' }                  # Start
+        4:  { value: 'i', value2: 'DPAD_UP' }                # D-pad Up
+        5:  { value: 'k', value2: 'DPAD_DOWN' }              # D-pad Down
+        6:  { value: 'j', value2: 'DPAD_LEFT' }              # D-pad Left
+        7:  { value: 'l', value2: 'DPAD_RIGHT' }             # D-pad Right
+        8:  { value: 'm', value2: 'BUTTON_1' }               # A → green (south)
+        9:  { value: 'u', value2: 'BUTTON_3' }               # X → blue (west)
+        10: { value: 'y', value2: 'LEFT_TOP_SHOULDER' }      # L → LB
+        11: { value: 'o', value2: 'RIGHT_TOP_SHOULDER' }     # R → RB
+        12: { value: 't', value2: 'LEFT_BOTTOM_SHOULDER' }   # L2 → LT
+        13: { value: 'p', value2: 'RIGHT_BOTTOM_SHOULDER' }  # R2 → RT
