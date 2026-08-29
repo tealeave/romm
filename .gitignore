@@ -206,14 +206,23 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# secrets
-.env
+# secrets (`.env` already ignored above under Environments)
 .env.local
 secrets/
 
 # big/private data
 *.bin
 *.7z
+
+# ROM libraries — large-file platforms are too large to track
+# (small NES/SNES carts stay tracked; anything bigger stays local-only)
+library/roms/n64/
+library/roms/ps2/
+library/roms/psx/
+
+# RomM runtime data (saves/states/screenshots created while playing)
+# Uncomment to stop tracking new ones:
+# assets/users/
 
 # OS/editor noise
 .DS_Store
