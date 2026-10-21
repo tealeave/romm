@@ -227,3 +227,6 @@ library/roms/psx/
 # OS/editor noise
 .DS_Store
 *.swp
+
+# Internal work infrastructure notes (carisls AWS); keep local-only
+documents/access_notes/
