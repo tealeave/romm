@@ -18,6 +18,8 @@ system:
   versions: {}
 emulatorjs:
   debug: true
+  default_cores:
+    arcade: mame2003_plus   # wof.zip is a MAME 0.78-era set (tk2e_23b/22b); FBNeo's wof wants the 23c/22c revision
   controls:
     # value2 must use EmulatorJS gamepad names (BUTTON_1..4, DPAD_*, SELECT, START,
     # LEFT/RIGHT_TOP/BOTTOM_SHOULDER) — numeric indexes are ignored.

@@ -219,6 +219,7 @@ secrets/
 library/roms/n64/
 library/roms/ps2/
 library/roms/psx/
+library/roms/arcade/
 
 # RomM runtime data (saves/states/screenshots created while playing)
 # Uncomment to stop tracking new ones:
