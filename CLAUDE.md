@@ -3,6 +3,12 @@
 Self-hosted RomM game library. README.md covers setup and day-to-day usage; do not
 repeat it here. These rules apply to anyone (human or agent) committing to this repo.
 
+## 0. Open handoff
+
+There is a pending one-off task list for the TV PC in
+`documents/handoff/2026-11-07-tv-pc.md`. If you are on that machine, do it first.
+Remove this section when the handoff is done.
+
 ## 1. Never commit large files
 
 - Hard cap: no single tracked file over 5 MB. Keep the whole repo under ~100 MB.
